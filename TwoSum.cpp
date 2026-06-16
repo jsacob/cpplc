@@ -1,4 +1,3 @@
-#include <iostream>
 #include <map>
 #include <vector>
 
@@ -7,8 +6,8 @@ std::vector<int> twoSum(std::vector<int> *nums, int target) {
     std::map<int,int> map;
 
     for(int i = 0; i < nums->size(); i++) {
-        int complement = target - (*nums)[i];
         int currentNum = (*nums)[i];
+        int complement = target - currentNum;
 
         if(map.count(complement)) {
             return {map[complement], i};
