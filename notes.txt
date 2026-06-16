@@ -1,0 +1,10 @@
+dot operators in cpp need an object to work on. (nums.size()) 
+
+if you are using a pointer to nums the dot operator doesn't work as it's not an object. 
+so for dot operators we use (nums->size()) -> is just (*nums). We could also do (*nums).size().
+We are saying go to this data at this address. 
+
+as for non dot operators you have to use (*nums) to access the value at that address 
+example being (int complement = target - (*nums); 
+
+
