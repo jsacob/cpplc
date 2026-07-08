@@ -8,3 +8,6 @@ as for non dot operators you have to use (*nums) to access the value at that add
 example being (int complement = target - (*nums); 
 
 
+Non-Sleep Deep Rest (NSDR) or boring downtime. Your brain doesn't actually learn while you are coding; it encodes that data into long-term memory during the quiet, boring moments right after. By flooding your brain with short-form videos immediately after a problem, you are essentially hitting "delete" on the mental schema you just built.
+
+If you want to know how to simulate a sorted array using a map. reference back to problem "LongestConsecutiveSequence". What I wrote is truly amazing.
