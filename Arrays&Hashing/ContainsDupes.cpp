@@ -12,6 +12,8 @@ bool containsDuplicate(std::vector<int> &nums) {
     }
     set.insert(i);
     std::cout << "inserted " << i << std::endl;
+
+
   };
   return false;
 };
