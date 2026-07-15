@@ -44,7 +44,7 @@ int main () {
 
     for(const auto& row : result) {
         for(const auto& column : row) {
-            std::cout<< column << std::endl;
+            std::cout<< column << ", ";
         }
     }
     return 0;
