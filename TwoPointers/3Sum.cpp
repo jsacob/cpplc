@@ -10,7 +10,7 @@ std::vector<std::vector<int>> threeSum(std::vector<int>& nums) {
     int n = static_cast<int>(nums.size());
 
     for(int i = 0; i < n - 2; i++) {
-        if (i > 0 && nums[i] == nums[i - 1]) continue;
+        if (i > 0 && nums[i] == nums[i - 1]) continue;   //If the current number is the same as just processed skip it and move straight to the next.
 
         int left = i + 1, right = n - 1;
         int target = -nums[i];
