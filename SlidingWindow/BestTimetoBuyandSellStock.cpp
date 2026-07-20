@@ -14,7 +14,9 @@ public:
                 int currentProfit = prices[right] - prices[left];
                 maxProfit = std::max(maxProfit, currentProfit);
             }
-            left = right;
+            else {
+                left = right;
+            }
         }
         return maxProfit;
     }
