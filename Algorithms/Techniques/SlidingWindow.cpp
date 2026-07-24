@@ -1,3 +1,5 @@
+// these aren't the only ways to implement sliding window. Deque is a way to do fixed windows aswell
+
 #include <algorithm>
 #include <iostream>
 #include <vector>

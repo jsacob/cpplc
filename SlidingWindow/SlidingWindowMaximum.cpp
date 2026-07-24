@@ -8,20 +8,25 @@ class Solution{
 public:
     std::vector<int> maxSlidingWindow(std::vector<int>& nums, int k) {
         std::vector<int> result;
-        std::deque<int> dq;
+        std::deque<int> deque;
 
+        // 1. Remove indices that have left the window.
         for(int i = 0; i < nums.size(); i++) {
-            if(!dq.empty() && dq.front() == i - k) {
-                dq.pop_front();
+            if(!deque.empty() && deque.front() == i - k) {
+                deque.pop_front();
             }
 
-            while(!dq.empty() && nums[dq.back()] < nums[i]) {
-                dq.pop_back();
+            // 2. Remove indices whose values are smaller than nums[i].
+            while(!deque.empty() && nums[deque.back()] < nums[i]) {
+                deque.pop_back();
             }
-            dq.push_back(i);
 
+            // 3. Add the current index.
+            deque.push_back(i);
+
+            // 4. Once we've seen a full window, record the maximum.
             if(i >= k - 1) {
-                result.push_back(nums[dq.front()]);
+                result.push_back(nums[deque.front()]);
             }
         }
         return result;
